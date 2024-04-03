@@ -9,7 +9,7 @@ However, this may work in other operating systems with i3wm installed too.
 ### Screenshots
 If this home manager configuration is installed correctly, the system should look as follows:
 
-TODO: insert screenshot of system
+* TODO: insert screenshot of system
 
 ### Install Instructions
 * Install the NixOS operating system with [my preferred config](https://github.com/mboyea/nixos). If you don't want to use NixOS or my NixOS config, see [Install Preconditions](#install-preconditions)
