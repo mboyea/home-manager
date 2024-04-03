@@ -1,0 +1,34 @@
+
+### ADDITIONAL CONFIG ###
+
+# improve startup speed
+skip_global_compinit=1
+
+# typeset -U path cdpath fpath manpath
+
+# for profile in ${(z)NIX_PROFILES}; do
+#   fpath+=($profile/share/zsh/site-functions $profile/share/zsh/$ZSH_VERSION/functions $profile/share/zsh/vendor-completions)
+# done
+
+# HELPDIR="/nix/store/w81n67bahxz0ll5avk5kdj25ridwf6y8-zsh-5.9/share/zsh/$ZSH_VERSION/help"
+
+# plugins=(git)
+
+# ZSH_THEME="robbyrussell"
+# source $ZSH/oh-my-zsh.sh
+
+# HISTFILE="$ZDOTDIR/.zsh_history"
+# mkdir -p "$(dirname "$HISTFILE")"
+# HISTSIZE="10000"
+# SAVEHIST="10000"
+
+# setopt HIST_FCNTL_LOCK
+# setopt HIST_IGNORE_DUPS
+# unsetopt HIST_IGNORE_ALL_DUPS
+# setopt HIST_IGNORE_SPACE
+# unsetopt HIST_EXPIRE_DUPS_FIRST
+# setopt SHARE_HISTORY
+# unsetopt EXTENDED_HISTORY
+
+### END ADDITIONAL CONFIG ###
+
