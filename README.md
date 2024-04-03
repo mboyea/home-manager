@@ -14,7 +14,7 @@ TODO: insert screenshot of system
 ### Install Instructions
 * [Fork this repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) so that you can keep a copy of your local changes on GitHub.
 * Install the NixOS operating system with [my preferred config](https://github.com/mboyea/nixos). If you don't want to use NixOS or my NixOS config, see [Install Preconditions](#install-preconditions).
-* [Clone this repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) into directory `/home/mboyea/.config`.
+* [Clone the forked repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) into directory `/home/mboyea/.config`.
 * Run `home-manager switch`.
 
 ### Install Preconditions
