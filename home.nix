@@ -10,8 +10,9 @@
     xclip
     pamixer
     pavucontrol
-    brightnessctl
     playerctl
+    brightnessctl
+    acpi
     pandoc
     texliveFull
     gnumake
@@ -69,6 +70,12 @@
         recursive = true;
       };
     };
+  };
+
+  nix = {
+    package = pkgs.nix;
+    settings.use-xdg-base-directories = true;
+    # experimental-features = "nix-command flakes";
   };
 
   # do not modify the following
