@@ -1,11 +1,19 @@
 { config, lib, pkgs, inputs, ... }: {
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
+    };
+  };
+
   home.packages = with pkgs; [
+    vscode
     nerdfonts
     pango
     alacritty
     zsh
     oh-my-zsh
     firefox
+    chromium
     maim
     xclip
     pamixer
@@ -16,12 +24,17 @@
     pandoc
     texliveFull
     gnumake
+    zathura
+    python3
+    nodePackages.pnpm
+    flyctl
+    postgresql
+    obs-studio
+    teams-for-linux
+    libreoffice
+    gimp
+    inkscape
   ];
-
-  services.udiskie = {
-    enable = true;
-    notify = false;
-  };
 
   programs.git = {
     enable = true;
@@ -58,6 +71,23 @@
     recursive = true;
   };
 
+  programs.neovim = {
+    enable = true;
+    vimAlias = true;
+    viAlias = true;
+    # extraConfig = ''${builtins.readFile ./nvim/init.lua}'';
+    # extraPackages = with pkgs; [
+    #   # Svelte
+    #   {
+    #     plugin = pkgs.vimPlugins.vim-svelte;
+    #     type = "lua";
+    #     config = ''
+    #       require("config.treesitter")
+    #     '';
+    #   }
+    # ];
+  };
+
   xdg = {
     enable = true;
     configFile = {
@@ -69,7 +99,17 @@
         source = ./nvim;
         recursive = true;
       };
+      "zathura" = {
+        source = ./zathura;
+	recursive = true;
+      };
     };
+  };
+
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    BROWSER = "firefox";
+    TERMINAL = "alacritty";
   };
 
   nix = {
