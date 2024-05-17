@@ -1,7 +1,9 @@
 { config, lib, pkgs, inputs, ... }: {
   nixpkgs = {
     config = {
-      allowUnfree = true;
+      allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+        "vscode"
+      ];
     };
   };
 
@@ -110,6 +112,7 @@
     EDITOR = "nvim";
     BROWSER = "firefox";
     TERMINAL = "alacritty";
+    VSCODE_EXTENSIONS="$XDG_DATA_HOME/code-oss/extensions";
   };
 
   nix = {
