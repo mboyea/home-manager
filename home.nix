@@ -36,6 +36,7 @@
     libreoffice
     gimp
     inkscape
+    zip
   ];
 
   programs.git = {
