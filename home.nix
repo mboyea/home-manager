@@ -122,12 +122,12 @@
     # experimental-features = "nix-command flakes";
   };
 
-  # do not modify the following
   programs.home-manager.enable = true;
   home = {
     username = "mboyea";
     homeDirectory = "/home/mboyea";
-    stateVersion = "23.11";
   };
+  # do not modify the following
+  home.stateVersion = "23.11";
 }
 
