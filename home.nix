@@ -8,11 +8,11 @@
   };
 
   home.packages = with pkgs; [
+    alsa-utils
     vscode
     nerdfonts
     pango
     alacritty
-    zsh
     oh-my-zsh
     firefox
     chromium
@@ -37,6 +37,7 @@
     gimp
     inkscape
     zip
+    bash
   ];
 
   programs.git = {
@@ -72,6 +73,9 @@
   home.file.".zsh/.oh-my-zsh" = {
     source = ./zsh/oh-my-zsh;
     recursive = true;
+  };
+  home.shellAliases = {
+    mdpdf = "$HOME/code/mdc/mdpdf.sh";
   };
 
   programs.neovim = {

@@ -3,7 +3,7 @@
 
 # improve startup speed
 skip_global_compinit=1
-alias mdpdf='/home/mboyea/docs/pandoc-temp/pandoc-scripts/mdpdf.sh'
+# alias mdpdf='$HOME/code/mdc/mdpdf.sh'
 
 # typeset -U path cdpath fpath manpath
 
