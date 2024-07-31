@@ -3,11 +3,13 @@
     config = {
       allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
         "vscode"
+	"vivaldi"
       ];
     };
   };
 
   home.packages = with pkgs; [
+    vivaldi
     alsa-utils
     vscode
     nerdfonts
