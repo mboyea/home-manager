@@ -40,6 +40,7 @@
     inkscape
     zip
     bash
+    keepassxc
   ];
 
   programs.git = {

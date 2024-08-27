@@ -3,7 +3,7 @@
 
 # improve startup speed
 skip_global_compinit=1
-# alias mdpdf='$HOME/code/mdc/mdpdf.sh'
+alias mdc='$HOME/code/mdc/mdc.sh'
 
 # typeset -U path cdpath fpath manpath
 
