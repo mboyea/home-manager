@@ -28,7 +28,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # to start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty -- ls
+bindsym $mod+Return exec --no-startup-id alacritty --command zsh
 
 # to start dmenu (program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run

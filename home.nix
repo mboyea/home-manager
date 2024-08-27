@@ -113,6 +113,10 @@
         source = ./zathura;
 	recursive = true;
       };
+       # "alacritty" = {
+       #   source = ./alacritty;
+       #  recursive = true;
+       # };
     };
   };
 
