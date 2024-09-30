@@ -42,6 +42,7 @@
     zip
     bash
     keepassxc
+    appimage-run
   ];
 
   programs.git = {
