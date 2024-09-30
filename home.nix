@@ -12,6 +12,7 @@
     vivaldi
     alsa-utils
     vscode
+    vlc
     nerdfonts
     pango
     alacritty
