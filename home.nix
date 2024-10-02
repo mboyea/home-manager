@@ -1,4 +1,7 @@
 { config, lib, pkgs, inputs, ... }: {
+
+  ## PROGRAM SETTINGS ##
+
   nixpkgs = {
     config = {
       allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
@@ -115,6 +118,10 @@
         source = ./zathura;
 	recursive = true;
       };
+      "gtk-3.0" = {
+        source = ./gtk-3.0;
+	recursive = true;
+      };
        # "alacritty" = {
        #   source = ./alacritty;
        #  recursive = true;
@@ -128,6 +135,19 @@
     TERMINAL = "alacritty";
     VSCODE_EXTENSIONS="$XDG_DATA_HOME/code-oss/extensions";
   };
+
+  ## STYLE SETTINGS ##
+
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+      };
+    };
+  };
+
+  ## NIXOS SETTINGS ##
 
   nix = {
     package = pkgs.nix;
