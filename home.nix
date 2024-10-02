@@ -33,6 +33,7 @@
     texliveFull
     gnumake
     zathura
+    dconf
     python3
     nodePackages.pnpm
     flyctl
