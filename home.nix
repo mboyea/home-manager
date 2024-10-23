@@ -107,10 +107,10 @@
   xdg = {
     enable = true;
     configFile = {
-      "i3" = {
-        source = ./i3;
-        recursive = true;
-      };
+      # "i3" = {
+      #   source = ./i3;
+      #   recursive = true;
+      # };
       "nvim" = {
         source = ./nvim;
         recursive = true;
@@ -158,8 +158,8 @@
 
   programs.home-manager.enable = true;
   home = {
-    username = "mboyea";
-    homeDirectory = "/home/mboyea";
+    username = "admin";
+    homeDirectory = "/home/admin";
   };
   # do not modify the following
   home.stateVersion = "23.11";

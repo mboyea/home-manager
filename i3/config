@@ -115,7 +115,7 @@ bindsym $mod+a focus parent
 floating_modifier $mod
 
 # to drag a tiling window, you may instead drag on title bar
-tiling_drag modifier titlebar
+# tiling_drag modifier titlebar
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
