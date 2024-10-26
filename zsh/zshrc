@@ -4,6 +4,8 @@
 # improve startup speed
 skip_global_compinit=1
 alias mdc='$HOME/code/mdc/mdc.sh'
+alias uncap-hotspot='sudo sysctl net.ipv4.ip_default_ttl=65'
+alias cap-hotspot='sudo sysctl net.ipv4.ip_default_ttl=64'
 
 # typeset -U path cdpath fpath manpath
 

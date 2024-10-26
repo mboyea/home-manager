@@ -6,35 +6,22 @@
     config = {
       allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
         "vscode"
-	"vivaldi"
+        "discord"
+        "spotify"
       ];
     };
   };
 
   home.packages = with pkgs; [
-    vivaldi
-    alsa-utils
+    discord
+    spotify
     vscode
     vlc
-    nerdfonts
-    pango
-    alacritty
-    oh-my-zsh
-    firefox
-    chromium
-    maim
-    xclip
-    pamixer
-    pavucontrol
-    playerctl
-    brightnessctl
-    acpi
     pandoc
+    zathura
+    python3
     texliveFull
     gnumake
-    zathura
-    dconf
-    python3
     nodePackages.pnpm
     flyctl
     postgresql
@@ -44,9 +31,24 @@
     gimp
     inkscape
     zip
-    bash
     keepassxc
     appimage-run
+    oh-my-zsh
+    alsa-utils
+    nerdfonts
+    pango
+    alacritty
+    firefox
+    chromium
+    maim
+    xclip
+    pamixer
+    pavucontrol
+    playerctl
+    brightnessctl
+    acpi
+    dconf
+    bash
   ];
 
   programs.git = {
@@ -117,11 +119,11 @@
       };
       "zathura" = {
         source = ./zathura;
-	recursive = true;
+        recursive = true;
       };
       "gtk-3.0" = {
         source = ./gtk-3.0;
-	recursive = true;
+        recursive = true;
       };
        # "alacritty" = {
        #   source = ./alacritty;
