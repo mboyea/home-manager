@@ -112,6 +112,10 @@
         source = ./gtk-3.0;
         recursive = true;
       };
+      "containers" = {
+        source = ./containers;
+        recursive = true;
+      };
        # "alacritty" = {
        #   source = ./alacritty;
        #  recursive = true;
