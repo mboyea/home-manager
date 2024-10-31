@@ -137,6 +137,7 @@
     BROWSER = "firefox";
     TERMINAL = "alacritty";
     VSCODE_EXTENSIONS="$XDG_DATA_HOME/code-oss/extensions";
+    NIX_BUILD_SHELL = "zsh";
   };
 
   ## STYLE SETTINGS ##
