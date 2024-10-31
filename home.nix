@@ -85,9 +85,6 @@
     source = ./zsh/oh-my-zsh;
     recursive = true;
   };
-  home.shellAliases = {
-    mdpdf = "$HOME/code/mdc/mdpdf.sh";
-  };
 
   programs.neovim = {
     enable = true;
@@ -137,7 +134,6 @@
     BROWSER = "firefox";
     TERMINAL = "alacritty";
     VSCODE_EXTENSIONS="$XDG_DATA_HOME/code-oss/extensions";
-    NIX_BUILD_SHELL = "zsh";
   };
 
   ## STYLE SETTINGS ##
