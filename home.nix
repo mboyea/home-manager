@@ -34,21 +34,11 @@
     keepassxc
     appimage-run
     oh-my-zsh
-    alsa-utils
     nerdfonts
     pango
     alacritty
     firefox
     chromium
-    maim
-    xclip
-    pamixer
-    pavucontrol
-    playerctl
-    brightnessctl
-    acpi
-    dconf
-    bash
   ];
 
   programs.git = {
