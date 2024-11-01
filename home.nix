@@ -8,7 +8,6 @@
         "vscode"
         "discord"
         "spotify"
-        "minecraft"
       ];
     };
   };
@@ -40,7 +39,6 @@
     alacritty
     firefox
     chromium
-    minecraft
   ];
 
   programs.git = {
