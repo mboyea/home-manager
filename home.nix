@@ -39,6 +39,7 @@
     alacritty
     firefox
     chromium
+    minecraft
   ];
 
   programs.git = {
