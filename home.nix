@@ -8,6 +8,7 @@
         "vscode"
         "discord"
         "spotify"
+        "minecraft"
       ];
     };
   };
