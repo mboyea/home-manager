@@ -33,7 +33,6 @@
     zip
     keepassxc
     appimage-run
-    oh-my-zsh
     nerdfonts
     pango
     alacritty
