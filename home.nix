@@ -38,6 +38,7 @@
     alacritty
     firefox
     chromium
+    obs-studio
   ];
 
   programs.git = {
