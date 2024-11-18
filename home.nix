@@ -3,6 +3,16 @@
   ## PROGRAM SETTINGS ##
 
   nixpkgs = {
+    overlays = [
+      # ! this is excessively slow (rebuilds entire package from src) AND does not work
+      # (self: super: {
+      #   obs-studio = super.obs-studio.overrideAttrs (oldAttrs: {
+      #     postInstall = (oldAttrs.postInstall or "") + ''
+      #       wrapProgram $out/bin/obs --set QT_QPA_PLATFORM wayland
+      #     '';
+      #   });
+      # })
+    ];
     config = {
       allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
         "vscode"
@@ -39,6 +49,10 @@
     firefox
     chromium
     obs-studio
+    pipewire
+    wireplumber
+    xdg-desktop-portal
+    xdg-desktop-portal-wlr
   ];
 
   programs.git = {
