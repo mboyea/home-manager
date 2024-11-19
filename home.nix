@@ -49,6 +49,8 @@
     firefox
     chromium
     obs-studio
+    lmms
+    audacity
     pipewire
     wireplumber
     xdg-desktop-portal
