@@ -2,6 +2,7 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.copyindent = true
 vim.opt.preserveindent = true
 vim.opt.scrolloff = 10
+vim.opt.number = true;
 vim.opt.relativenumber = true;
 
 function LineNumberColors()
