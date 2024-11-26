@@ -55,6 +55,7 @@
     wireplumber
     xdg-desktop-portal
     xdg-desktop-portal-wlr
+    keepassxc
   ];
 
   programs.git = {
@@ -130,6 +131,10 @@
       };
       "containers" = {
         source = ./containers;
+        recursive = true;
+      };
+      "keepassxc" = {
+        source = ./keepassxc;
         recursive = true;
       };
        # "alacritty" = {
