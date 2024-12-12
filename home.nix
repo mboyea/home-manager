@@ -18,6 +18,7 @@
         "vscode"
         "discord"
         "spotify"
+        "slack"
       ];
     };
   };
@@ -56,6 +57,7 @@
     xdg-desktop-portal
     xdg-desktop-portal-wlr
     keepassxc
+    slack
   ];
 
   programs.git = {
