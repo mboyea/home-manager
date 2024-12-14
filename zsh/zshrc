@@ -6,7 +6,7 @@ skip_global_compinit=1
 alias mdc='$HOME/code/mdc/mdc.sh'
 alias uncap-hotspot='sudo sysctl net.ipv4.ip_default_ttl=65'
 alias cap-hotspot='sudo sysctl net.ipv4.ip_default_ttl=64'
-alias nix-shell='nix-shell --run zsh'
+alias nix-shell='nix-shell --run $SHELL'
 nix() {
   if [[ $1 == "develop" ]]; then
     shift
