@@ -44,7 +44,6 @@
     zip
     keepassxc
     appimage-run
-    nerdfonts
     pango
     alacritty
     firefox
