@@ -19,6 +19,7 @@
         "discord"
         "spotify"
         "slack"
+        "pureref"
       ];
     };
   };
@@ -33,6 +34,7 @@
     python3
     texliveFull
     gnumake
+    nodejs
     nodePackages.pnpm
     flyctl
     postgresql
@@ -57,6 +59,7 @@
     xdg-desktop-portal-wlr
     keepassxc
     slack
+    pureref
   ];
 
   programs.git = {
@@ -92,6 +95,12 @@
   home.file.".zsh/.oh-my-zsh" = {
     source = ./zsh/oh-my-zsh;
     recursive = true;
+  };
+
+  programs.direnv = {
+    enable = true;
+    enableZshIntegration = true;
+    nix-direnv.enable = true;
   };
 
   programs.neovim = {
@@ -166,8 +175,9 @@
   ## NIXOS SETTINGS ##
 
   nix = {
+    enable = true;
     package = pkgs.nix;
-    settings.use-xdg-base-directories = true;
+    # settings.use-xdg-base-directories = true;
     # experimental-features = "nix-command flakes";
   };
 
