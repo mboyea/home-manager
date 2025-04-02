@@ -44,6 +44,7 @@
     gimp
     inkscape
     zip
+    unzip
     keepassxc
     appimage-run
     pango
@@ -60,6 +61,9 @@
     keepassxc
     slack
     pureref
+    yt-dlp
+    beancount
+    fava
   ];
 
   programs.git = {
